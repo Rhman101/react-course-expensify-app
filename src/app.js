@@ -16,13 +16,6 @@ store.subscribe(() => {
     // console.log(getVisibleExpenses(store.getState().expenses, store.getState().filters));
 });
 
-store.dispatch(addExpense({ description: 'Water bill', note:'H2O is awesome', amount: 50, createdAt: 10800 }));
-store.dispatch(addExpense({ description: 'Gas bill', note: 'Find cheaper gas', amount: 120, createdAt: 1080 }));
-store.dispatch(addExpense({ description: 'cellphone bill', note:'Use Whatsapp', amount: 150, createdAt: 101802 }));
-store.dispatch(sortByAmount());
-// store.dispatch(setStartDate(-5000000));
-// store.dispatch(setEndDate(1000000000000000));\
-
 const jsx = (
     <Provider store={store}>
         <AppRouter />
