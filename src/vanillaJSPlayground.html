@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset='utf=8'>
+     <title>VanillaJS</title>
+</head>
+<body>
+
+<script>
+     class MathFunctions {
+          constructor(input1, input2) {
+               this.input1 = input1;
+               this.input2 = input2;
+          };
+          squareRoot() {
+               return Math.sqrt(this.input1);
+          }
+          square() {
+               return this.input1 * this.input1;
+          }
+     };
+     console.log(MathFunctions);
+
+     const takeSquareRoot = new MathFunctions(625);
+     console.log(takeSquareRoot.squareRoot());
+
+     const takeSquare = new MathFunctions(6);
+     console.log(takeSquare.square());
+
+     class UpgradedFunctions extends MathFunctions {
+          
+     }
+
+</script>
+</body>
+
+</html>
